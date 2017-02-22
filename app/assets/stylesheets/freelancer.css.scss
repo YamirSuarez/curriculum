@@ -31,18 +31,20 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
-hr.star-light,
-hr.star-primary {
+hr{
+
+  .star-primary, .star-light{
   padding: 0;
   border: none;
   border-top: solid 5px;
   text-align: center;
   max-width: 250px;
   margin: 25px auto 30px;
+  }
 }
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
+  content: "☆";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -54,7 +56,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: #000;
   color: white;
 }
 hr.star-primary {
@@ -69,7 +71,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  background: #000;
   color: white;
 }
 header .container {
@@ -97,18 +99,20 @@ header .intro-text .skills {
     padding-bottom: 100px;
   }
   header .intro-text .name {
-    font-size: 4.75em;
+    font-size: 3.75em;
   }
   header .intro-text .skills {
     font-size: 1.75em;
   }
 }
 .navbar-custom {
-  background: #2C3E50;
+  background: #000;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  border: none;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: unset;
 }
 .navbar-custom a:focus {
   outline: none;
@@ -129,7 +133,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: white;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -137,14 +141,12 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li.active a {
-  color: white;
-  background: #18BC9C;
+  color: #000;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-  color: white;
-  background: #18BC9C;
+  color: #000;
 }
 .navbar-custom .navbar-toggle {
   color: white;
