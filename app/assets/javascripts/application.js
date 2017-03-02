@@ -15,5 +15,6 @@
 //= require jquery_ujs
 //= require jquery.easing
 //= require turbolinks
+//= require javas.js
 //= require_tree .
 //= require_self
